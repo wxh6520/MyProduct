@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CanvasMainViewController" customModule="MyProduct" customModuleProvider="target">
+            <connections>
+                <outlet property="leftRingControl" destination="auC-q8-xQe" id="VpG-Lo-qzJ"/>
+                <outlet property="leftRingControlHeight" destination="JvV-zq-jAe" id="8TL-KP-Hnd"/>
+                <outlet property="leftRingControlLeading" destination="WMc-cd-cLH" id="DUz-pA-PMg"/>
+                <outlet property="leftRingControlTop" destination="Sqa-MH-LIG" id="zJb-wJ-zD2"/>
+                <outlet property="leftRingControlWidth" destination="2hE-tu-uOU" id="amj-HC-aSS"/>
+                <outlet property="scrollView" destination="yKY-st-VfS" id="NMP-bs-TfB"/>
+                <outlet property="separatorView" destination="YJ0-hD-C2n" id="ixa-lf-zmT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yKY-st-VfS">
+                    <rect key="frame" x="0.0" y="44" width="414" height="817"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="0q6-oE-QHZ"/>
+                    </connections>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="auC-q8-xQe" customClass="RingControl" customModule="MyProduct" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="802" width="60" height="60"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="2hE-tu-uOU"/>
+                        <constraint firstAttribute="height" constant="60" id="JvV-zq-jAe"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YJ0-hD-C2n">
+                    <rect key="frame" x="20" y="861" width="374" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="atc-o2-tk7"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="INj-5C-7cP" userLabel="Bottom View">
+                    <rect key="frame" x="0.0" y="862" width="414" height="34"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="5NW-e1-OXr"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="YJ0-hD-C2n" firstAttribute="top" secondItem="yKY-st-VfS" secondAttribute="bottom" id="4lj-i2-Z9c"/>
+                <constraint firstItem="INj-5C-7cP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="6zx-QA-euu"/>
+                <constraint firstItem="INj-5C-7cP" firstAttribute="top" secondItem="YJ0-hD-C2n" secondAttribute="bottom" id="KGP-NY-mDt"/>
+                <constraint firstItem="INj-5C-7cP" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="LFd-lv-GAu"/>
+                <constraint firstItem="auC-q8-xQe" firstAttribute="top" secondItem="YJ0-hD-C2n" secondAttribute="bottom" constant="-60" id="Sqa-MH-LIG"/>
+                <constraint firstItem="auC-q8-xQe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="WMc-cd-cLH"/>
+                <constraint firstItem="YJ0-hD-C2n" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" symbolic="YES" id="Xyl-z7-EeN"/>
+                <constraint firstItem="yKY-st-VfS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="dqh-Ec-lp5"/>
+                <constraint firstAttribute="bottom" secondItem="INj-5C-7cP" secondAttribute="bottom" id="gj8-i2-czQ"/>
+                <constraint firstItem="yKY-st-VfS" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="k4I-F1-6Wk"/>
+                <constraint firstAttribute="trailing" secondItem="YJ0-hD-C2n" secondAttribute="trailing" constant="20" symbolic="YES" id="mFk-X6-7qH"/>
+                <constraint firstItem="yKY-st-VfS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="qPh-pf-hLG"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="93.75"/>
+        </view>
+    </objects>
+</document>
