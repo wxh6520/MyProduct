@@ -19,5 +19,6 @@ target 'MyProduct' do
   pod 'ReactiveCocoa', '~> 10.1'
   pod 'IQKeyboardManagerSwift'
   pod 'Reveal-SDK', :configurations => ['Debug']
+  pod 'PiPhone'
 
 end

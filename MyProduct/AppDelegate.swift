@@ -12,6 +12,8 @@ import IQKeyboardManagerSwift
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
+    var window: UIWindow?
+    
     var shortcutItemToProcess: UIApplicationShortcutItem?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
@@ -31,16 +33,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func applicationDidBecomeActive(_ application: UIApplication) {
+        UIApplication.shared.keyWindow?.backgroundColor = .white
+        
         if let shortcutItem = shortcutItemToProcess {
             // In this sample an alert is being shown to indicate that the action has been triggered,
             // but in real code the functionality for the quick action would be triggered.
-            var message = "\(shortcutItem.type) triggered"
-            if let name = shortcutItem.userInfo?["Name"] {
-                message += " for \(name)"
+//            var message = "\(shortcutItem.type) triggered"
+//            if let name = shortcutItem.userInfo?["Name"] {
+//                message += " for \(name)"
+//            }
+//            let alertController = UIAlertController(title: "Quick Action", message: message, preferredStyle: .alert)
+//            alertController.addAction(UIAlertAction(title: "Close", style: .default, handler: nil))
+//            application.keyWindow?.rootViewController?.present(alertController, animated: true, completion: nil)
+//
+//            // Reset the shortcut item so it's never processed twice.
+//            shortcutItemToProcess = nil
+            
+            if let tabCtr = UIApplication.shared.keyWindow?.rootViewController as? UITabBarController {
+                tabCtr.selectedIndex = 0
+                if let nav = tabCtr.viewControllers?.first as? UINavigationController {
+                    switch shortcutItem.type {
+                    case "SearchAction":
+                        let search = TableSearchController()
+                        nav.pushViewController(search, animated: true)
+                    case "SignatureAction":
+                        let signature = CanvasMainViewController(nibName: "CanvasMainViewController", bundle: nil)
+                        nav.pushViewController(signature, animated: true)
+                    default:
+                        print("")
+                    }
+                }
             }
-            let alertController = UIAlertController(title: "Quick Action", message: message, preferredStyle: .alert)
-            alertController.addAction(UIAlertAction(title: "Close", style: .default, handler: nil))
-            application.keyWindow?.rootViewController?.present(alertController, animated: true, completion: nil)
 
             // Reset the shortcut item so it's never processed twice.
             shortcutItemToProcess = nil
@@ -52,21 +75,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         application.shortcutItems = [signature]
     }
     
-}
-
-@available (iOS 13, *)
-extension AppDelegate {
-    // MARK: UISceneSession Lifecycle
-
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
-    }
-
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
-    }
 }

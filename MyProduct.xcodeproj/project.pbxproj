@@ -31,6 +31,8 @@
 		54712F8823EC3FA400D08317 /* MosaicLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54712F8723EC3FA400D08317 /* MosaicLayout.swift */; };
 		54712F8A23EC3FC900D08317 /* MosaicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54712F8923EC3FC900D08317 /* MosaicCell.swift */; };
 		54712F8C23EC403100D08317 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54712F8B23EC403100D08317 /* Utilities.swift */; };
+		54828FE8240900F900D14E53 /* CustomPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54828FE7240900F900D14E53 /* CustomPlayerViewController.swift */; };
+		54828FEA2409013200D14E53 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54828FE92409013200D14E53 /* PlayerView.swift */; };
 		54A5D55A23EAE006005B83EF /* CollectionViewPrefetchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D55923EAE006005B83EF /* CollectionViewPrefetchCell.swift */; };
 		54A5D55C23EAE056005B83EF /* DisplayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D55B23EAE056005B83EF /* DisplayData.swift */; };
 		54A5D56323EAE2FC005B83EF /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D56223EAE2FC005B83EF /* MyViewController.swift */; };
@@ -54,7 +56,6 @@
 		54A5D58823EB0E6C005B83EF /* TableViewPrefetchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D58723EB0E6C005B83EF /* TableViewPrefetchCell.swift */; };
 		54A5D58A23EB1404005B83EF /* PrefetchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A5D58923EB1404005B83EF /* PrefetchViewController.swift */; };
 		54EC333523CF3E6800B7EA22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EC333423CF3E6800B7EA22 /* AppDelegate.swift */; };
-		54EC333723CF3E6800B7EA22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EC333623CF3E6800B7EA22 /* SceneDelegate.swift */; };
 		54EC333C23CF3E6800B7EA22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54EC333A23CF3E6800B7EA22 /* Main.storyboard */; };
 		54EC333E23CF3E6900B7EA22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54EC333D23CF3E6900B7EA22 /* Assets.xcassets */; };
 		54EC334123CF3E6900B7EA22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54EC333F23CF3E6900B7EA22 /* LaunchScreen.storyboard */; };
@@ -89,6 +90,8 @@
 		54712F8723EC3FA400D08317 /* MosaicLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosaicLayout.swift; sourceTree = "<group>"; };
 		54712F8923EC3FC900D08317 /* MosaicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosaicCell.swift; sourceTree = "<group>"; };
 		54712F8B23EC403100D08317 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		54828FE7240900F900D14E53 /* CustomPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPlayerViewController.swift; sourceTree = "<group>"; };
+		54828FE92409013200D14E53 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		54A5D55923EAE006005B83EF /* CollectionViewPrefetchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewPrefetchCell.swift; sourceTree = "<group>"; };
 		54A5D55B23EAE056005B83EF /* DisplayData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayData.swift; sourceTree = "<group>"; };
 		54A5D56223EAE2FC005B83EF /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
@@ -113,7 +116,6 @@
 		54A5D58923EB1404005B83EF /* PrefetchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefetchViewController.swift; sourceTree = "<group>"; };
 		54EC333123CF3E6800B7EA22 /* MyProduct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyProduct.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54EC333423CF3E6800B7EA22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		54EC333623CF3E6800B7EA22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		54EC333B23CF3E6800B7EA22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		54EC333D23CF3E6900B7EA22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54EC334023CF3E6900B7EA22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				54A5D56223EAE2FC005B83EF /* MyViewController.swift */,
+				54828FE7240900F900D14E53 /* CustomPlayerViewController.swift */,
 			);
 			path = My;
 			sourceTree = "<group>";
@@ -272,7 +275,6 @@
 				54EC334B23CF4C6600B7EA22 /* ViewModels */,
 				54EC335023CF4C6700B7EA22 /* Views */,
 				54EC333423CF3E6800B7EA22 /* AppDelegate.swift */,
-				54EC333623CF3E6800B7EA22 /* SceneDelegate.swift */,
 				54EC333A23CF3E6800B7EA22 /* Main.storyboard */,
 				54EC333D23CF3E6900B7EA22 /* Assets.xcassets */,
 				54EC333F23CF3E6900B7EA22 /* LaunchScreen.storyboard */,
@@ -335,6 +337,7 @@
 				54A5D55923EAE006005B83EF /* CollectionViewPrefetchCell.swift */,
 				54A5D58723EB0E6C005B83EF /* TableViewPrefetchCell.swift */,
 				54712F8923EC3FC900D08317 /* MosaicCell.swift */,
+				54828FE92409013200D14E53 /* PlayerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -505,7 +508,6 @@
 				54EC333523CF3E6800B7EA22 /* AppDelegate.swift in Sources */,
 				54A5D56F23EAE314005B83EF /* TableViewController.swift in Sources */,
 				544660E523F13D5A0021DA58 /* StrokeGestureRecognizer.swift in Sources */,
-				54EC333723CF3E6800B7EA22 /* SceneDelegate.swift in Sources */,
 				54A5D57A23EAE6F7005B83EF /* CollectionAsyncFetcher.swift in Sources */,
 				54712F8A23EC3FC900D08317 /* MosaicCell.swift in Sources */,
 				54A5D58823EB0E6C005B83EF /* TableViewPrefetchCell.swift in Sources */,
@@ -516,6 +518,7 @@
 				54A5D58623EB0E30005B83EF /* TableAsyncFetcherOperation.swift in Sources */,
 				546257E423F00D4C003E3383 /* TableSearchController.swift in Sources */,
 				54A5D57223EAE321005B83EF /* BaseViewController.swift in Sources */,
+				54828FE8240900F900D14E53 /* CustomPlayerViewController.swift in Sources */,
 				54A5D56E23EAE314005B83EF /* MultiSelectViewController.swift in Sources */,
 				54A5D56723EAE30A005B83EF /* ItemMasterViewController.swift in Sources */,
 				54A5D57323EAE321005B83EF /* BaseTableViewController.swift in Sources */,
@@ -533,6 +536,7 @@
 				54A5D56D23EAE314005B83EF /* CollectionViewController.swift in Sources */,
 				54A5D57823EAE477005B83EF /* CustomDataSource.swift in Sources */,
 				544660EB23F13DCA0021DA58 /* RingControl.swift in Sources */,
+				54828FEA2409013200D14E53 /* PlayerView.swift in Sources */,
 				54A5D58A23EB1404005B83EF /* PrefetchViewController.swift in Sources */,
 				544660E923F13DAA0021DA58 /* RingView.swift in Sources */,
 				54712F8C23EC403100D08317 /* Utilities.swift in Sources */,
@@ -704,7 +708,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.wxh.MyProduct;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -724,7 +728,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.wxh.MyProduct;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

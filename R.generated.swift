@@ -306,6 +306,8 @@ struct _R: Rswift.Validatable {
       let name = "Main"
 
       static func validate() throws {
+        if UIKit.UIImage(named: "star.fill", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'star.fill' is used in storyboard 'Main', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "triangle.fill", in: R.hostingBundle, compatibleWith: nil) == nil { throw Rswift.ValidationError(description: "[R.swift] Image named 'triangle.fill' is used in storyboard 'Main', but couldn't be loaded.") }
         if #available(iOS 11.0, tvOS 11.0, *) {
         }
       }

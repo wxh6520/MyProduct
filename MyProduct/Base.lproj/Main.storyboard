@@ -65,7 +65,7 @@
         <scene sceneID="8Px-EX-Mpl">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hNw-ab-7KB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="发现" id="GPR-rI-mXN"/>
+                    <tabBarItem key="tabBarItem" title="发现" image="star.fill" catalog="system" id="GPR-rI-mXN"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZMS-vF-q9U">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -84,7 +84,7 @@
         <scene sceneID="1K1-DO-ttg">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FNo-1B-y0F" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="我的" id="G61-MM-Qtl"/>
+                    <tabBarItem key="tabBarItem" title="我的" image="triangle.fill" catalog="system" id="G61-MM-Qtl"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="93D-jr-O69">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -100,4 +100,8 @@
             <point key="canvasLocation" x="-184.05797101449278" y="70.982142857142847"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="star.fill" catalog="system" width="64" height="58"/>
+        <image name="triangle.fill" catalog="system" width="64" height="56"/>
+    </resources>
 </document>
