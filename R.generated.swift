@@ -131,12 +131,14 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.file` struct is generated, and contains static references to 2 files.
+  /// This `R.file` struct is generated, and contains static references to 3 files.
   struct file {
     /// Resource file `lipsum_descriptions.txt`.
     static let lipsum_descriptionsTxt = Rswift.FileResource(bundle: R.hostingBundle, name: "lipsum_descriptions", pathExtension: "txt")
     /// Resource file `lipsum_titles.txt`.
     static let lipsum_titlesTxt = Rswift.FileResource(bundle: R.hostingBundle, name: "lipsum_titles", pathExtension: "txt")
+    /// Resource file `servishero_loading.json`.
+    static let servishero_loadingJson = Rswift.FileResource(bundle: R.hostingBundle, name: "servishero_loading", pathExtension: "json")
 
     /// `bundle.url(forResource: "lipsum_descriptions", withExtension: "txt")`
     static func lipsum_descriptionsTxt(_: Void = ()) -> Foundation.URL? {
@@ -147,6 +149,12 @@ struct R: Rswift.Validatable {
     /// `bundle.url(forResource: "lipsum_titles", withExtension: "txt")`
     static func lipsum_titlesTxt(_: Void = ()) -> Foundation.URL? {
       let fileResource = R.file.lipsum_titlesTxt
+      return fileResource.bundle.url(forResource: fileResource)
+    }
+
+    /// `bundle.url(forResource: "servishero_loading", withExtension: "json")`
+    static func servishero_loadingJson(_: Void = ()) -> Foundation.URL? {
+      let fileResource = R.file.servishero_loadingJson
       return fileResource.bundle.url(forResource: fileResource)
     }
 

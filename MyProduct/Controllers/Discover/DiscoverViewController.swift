@@ -25,6 +25,7 @@ class DiscoverViewController: UITableViewController {
         case waterfall = "瀑布流"
         case search = "搜索"
         case signature = "签名"
+        case animation = "动画"
     }
     
     override func viewDidLoad() {
@@ -36,7 +37,7 @@ class DiscoverViewController: UITableViewController {
         tableView.estimatedRowHeight = 50
         tableView.separatorStyle = .singleLine
         
-        dataArray.append(contentsOf: [.item, .multiSelect, .prefetch, .waterfall, .search, .signature])
+        dataArray.append(contentsOf: [.item, .multiSelect, .prefetch, .waterfall, .search, .signature, .animation])
     }
     
     // MARK: - UITableViewDataSource
@@ -81,6 +82,9 @@ class DiscoverViewController: UITableViewController {
         case .signature:
             let signature = CanvasMainViewController(nibName: "CanvasMainViewController", bundle: nil)
             navigationController?.pushViewController(signature, animated: true)
+        case .animation:
+            let animation = LottieViewController()
+            navigationController?.pushViewController(animation, animated: true)
         }
     }
     

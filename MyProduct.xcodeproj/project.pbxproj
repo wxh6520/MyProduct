@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5404AD87240A261B00475704 /* LottieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404AD86240A261B00475704 /* LottieViewController.swift */; };
+		5404AD89240A264E00475704 /* servishero_loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 5404AD88240A264E00475704 /* servishero_loading.json */; };
 		541C188223D1E84D00233AD8 /* FillerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541C188123D1E84D00233AD8 /* FillerModel.swift */; };
 		541C188D23D1EFD800233AD8 /* lipsum_descriptions.txt in Resources */ = {isa = PBXBuildFile; fileRef = 541C188B23D1EFD800233AD8 /* lipsum_descriptions.txt */; };
 		541C188E23D1EFD800233AD8 /* lipsum_titles.txt in Resources */ = {isa = PBXBuildFile; fileRef = 541C188C23D1EFD800233AD8 /* lipsum_titles.txt */; };
@@ -66,6 +68,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5404AD86240A261B00475704 /* LottieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieViewController.swift; sourceTree = "<group>"; };
+		5404AD88240A264E00475704 /* servishero_loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = servishero_loading.json; sourceTree = "<group>"; };
 		541C188123D1E84D00233AD8 /* FillerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillerModel.swift; sourceTree = "<group>"; };
 		541C188B23D1EFD800233AD8 /* lipsum_descriptions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lipsum_descriptions.txt; sourceTree = "<group>"; };
 		541C188C23D1EFD800233AD8 /* lipsum_titles.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lipsum_titles.txt; sourceTree = "<group>"; };
@@ -140,6 +144,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5404AD85240A25D700475704 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				5404AD86240A261B00475704 /* LottieViewController.swift */,
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
 		544660DF23F13CD70021DA58 /* Signature */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +201,7 @@
 		54A5D55E23EAE0CA005B83EF /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				5404AD85240A25D700475704 /* Animation */,
 				544660DF23F13CD70021DA58 /* Signature */,
 				546257DC23F00ACA003E3383 /* Search */,
 				54712F8223EC3DB200D08317 /* Waterfall */,
@@ -315,6 +328,7 @@
 		54EC334E23CF4C6700B7EA22 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5404AD88240A264E00475704 /* servishero_loading.json */,
 				541C188B23D1EFD800233AD8 /* lipsum_descriptions.txt */,
 				541C188C23D1EFD800233AD8 /* lipsum_titles.txt */,
 			);
@@ -427,6 +441,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5404AD89240A264E00475704 /* servishero_loading.json in Resources */,
 				541C188E23D1EFD800233AD8 /* lipsum_titles.txt in Resources */,
 				54EC334123CF3E6900B7EA22 /* LaunchScreen.storyboard in Resources */,
 				541C188D23D1EFD800233AD8 /* lipsum_descriptions.txt in Resources */,
@@ -539,6 +554,7 @@
 				54828FEA2409013200D14E53 /* PlayerView.swift in Sources */,
 				54A5D58A23EB1404005B83EF /* PrefetchViewController.swift in Sources */,
 				544660E923F13DAA0021DA58 /* RingView.swift in Sources */,
+				5404AD87240A261B00475704 /* LottieViewController.swift in Sources */,
 				54712F8C23EC403100D08317 /* Utilities.swift in Sources */,
 				54A5D56323EAE2FC005B83EF /* MyViewController.swift in Sources */,
 				54A5D58223EB0DF4005B83EF /* CustomTableDataSource.swift in Sources */,
