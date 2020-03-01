@@ -15,7 +15,7 @@ protocol CustomPlayerViewControllerDelegate: class {
     
 }
 
-class CustomPlayerViewController: UIViewController {
+class CustomPlayerViewController: BaseViewController {
     
     var playerView: PlayerView!
     var pipToggleButton: UIButton!

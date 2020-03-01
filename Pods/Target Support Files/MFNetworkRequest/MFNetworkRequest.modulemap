@@ -1,0 +1,6 @@
+framework module MFNetworkRequest {
+  umbrella header "MFNetworkRequest-umbrella.h"
+
+  export *
+  module * { export * }
+}

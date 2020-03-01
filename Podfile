@@ -20,5 +20,9 @@ target 'MyProduct' do
   pod 'IQKeyboardManagerSwift'
   pod 'Reveal-SDK', :configurations => ['Debug']
   pod 'PiPhone'
+  pod 'Toast-Swift', '~> 5.0.1'
+  pod 'MFNetworkRequest'
+  pod 'MFAlertController'
+  pod 'MJRefresh'
 
 end

@@ -1,0 +1,6 @@
+framework module MFAlertController {
+  umbrella header "MFAlertController-umbrella.h"
+
+  export *
+  module * { export * }
+}

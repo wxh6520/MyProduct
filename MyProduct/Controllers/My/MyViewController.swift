@@ -11,7 +11,7 @@ import AVKit
 import PiPhone
 import SnapKit
 
-class MyViewController: UIViewController {
+class MyViewController: BaseViewController {
 
     let urls = ["http://vfx.mtime.cn/Video/2019/02/04/mp4/190204084208765161.mp4",
     "http://vfx.mtime.cn/Video/2019/03/21/mp4/190321153853126488.mp4"]
