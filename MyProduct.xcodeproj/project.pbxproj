@@ -16,6 +16,7 @@
 		5404AD94240A521A00475704 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404AD93240A521A00475704 /* BookViewController.swift */; };
 		5404AD96240A523700475704 /* BookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404AD95240A523700475704 /* BookViewModel.swift */; };
 		5404AD98240A525000475704 /* BookDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5404AD97240A525000475704 /* BookDataModel.swift */; };
+		5408BE66240B70B400A68FC1 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5408BE65240B70B400A68FC1 /* UIColorExtension.swift */; };
 		541C188223D1E84D00233AD8 /* FillerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541C188123D1E84D00233AD8 /* FillerModel.swift */; };
 		541C188D23D1EFD800233AD8 /* lipsum_descriptions.txt in Resources */ = {isa = PBXBuildFile; fileRef = 541C188B23D1EFD800233AD8 /* lipsum_descriptions.txt */; };
 		541C188E23D1EFD800233AD8 /* lipsum_titles.txt in Resources */ = {isa = PBXBuildFile; fileRef = 541C188C23D1EFD800233AD8 /* lipsum_titles.txt */; };
@@ -84,6 +85,7 @@
 		5404AD93240A521A00475704 /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
 		5404AD95240A523700475704 /* BookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewModel.swift; sourceTree = "<group>"; };
 		5404AD97240A525000475704 /* BookDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDataModel.swift; sourceTree = "<group>"; };
+		5408BE65240B70B400A68FC1 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		541C188123D1E84D00233AD8 /* FillerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FillerModel.swift; sourceTree = "<group>"; };
 		541C188B23D1EFD800233AD8 /* lipsum_descriptions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lipsum_descriptions.txt; sourceTree = "<group>"; };
 		541C188C23D1EFD800233AD8 /* lipsum_titles.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lipsum_titles.txt; sourceTree = "<group>"; };
@@ -174,6 +176,14 @@
 				5404AD93240A521A00475704 /* BookViewController.swift */,
 			);
 			path = MVVM;
+			sourceTree = "<group>";
+		};
+		5408BE64240B709D00A68FC1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5408BE65240B70B400A68FC1 /* UIColorExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		544660DF23F13CD70021DA58 /* Signature */ = {
@@ -305,6 +315,7 @@
 		54EC333323CF3E6800B7EA22 /* MyProduct */ = {
 			isa = PBXGroup;
 			children = (
+				5408BE64240B709D00A68FC1 /* Extensions */,
 				54EC334C23CF4C6600B7EA22 /* Controllers */,
 				54EC334F23CF4C6700B7EA22 /* Helpers */,
 				54EC334D23CF4C6600B7EA22 /* Models */,
@@ -572,6 +583,7 @@
 				54A5D57323EAE321005B83EF /* BaseTableViewController.swift in Sources */,
 				541C189F23D1F94500233AD8 /* CollectionViewCell.swift in Sources */,
 				544660E123F13CF00021DA58 /* CGMathExtensions.swift in Sources */,
+				5408BE66240B70B400A68FC1 /* UIColorExtension.swift in Sources */,
 				546257DE23F00B77003E3383 /* BaseSearchController.swift in Sources */,
 				54712F8423EC3DFD00D08317 /* BaseCollectionViewController.swift in Sources */,
 				544660E723F13D890021DA58 /* CGDrawingEngine.swift in Sources */,

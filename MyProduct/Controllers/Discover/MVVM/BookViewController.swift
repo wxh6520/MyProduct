@@ -27,6 +27,7 @@ class BookViewController: BaseViewController {
         table.dataSource = bookViewModel
         view.addSubview(table)
         
+        // 请求图书列表，观察结果，得到数据后刷新列表。监听信号，数据更新，视图更新
         bookViewModel.bookAction.apply(()).startWithResult { (result) in
             switch result {
             case let .success(value):

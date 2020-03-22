@@ -24,5 +24,7 @@ target 'MyProduct' do
   pod 'MFNetworkRequest'
   pod 'MFAlertController'
   pod 'MJRefresh'
+  pod 'RxSwift', '~> 5'
+  pod 'RxCocoa', '~> 5'
 
 end

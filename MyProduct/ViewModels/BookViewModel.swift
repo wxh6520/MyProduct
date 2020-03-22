@@ -26,9 +26,11 @@ class BookViewModel: NSObject,UITableViewDataSource {
     
     func initialBind() {
         
+        // 请求图书列表并解析业务。网络请求，产生信号
         bookAction = Action<(),[BookDataModel],Swift.Error> { (_) -> SignalProducer<[BookDataModel], Swift.Error> in
             SignalProducer<String, Swift.Error>({ (observer, _) in
                 
+                // MFNetworkRequest是我自己封装的网络请求，成功返回String报文，失败返回错误原因，可忽略。
                 let bookRequest = MFNetworkRequest()
                 bookRequest.sendDataGetRequest(url: "https://api.douban.com/v2/book/search?q=基础&apikey=0df993c66c0c636e29ecbb5344252a4a", successBlock: { (successStr) in
                     observer.send(value: successStr)
@@ -39,6 +41,7 @@ class BookViewModel: NSObject,UITableViewDataSource {
                 
             }).map({ (str) -> [BookDataModel] in
                 
+                // 将请求成功得到的String报文中的数组解析成BookDataModel数组
                 let bookObject = try! JSONSerialization.jsonObject(with: str.data(using: .utf8) ?? Data(), options: .mutableContainers)
                 let bookDic = bookObject as! Dictionary<String, Any>
                 let bookArr = bookDic["books"] as! Array<Dictionary<String,Any>>
@@ -58,12 +61,14 @@ class BookViewModel: NSObject,UITableViewDataSource {
     }
     
     //MARK:UITableViewDataSource
+    // 视图更新
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return models.count
         
     }
     
+    // 视图更新
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         var cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier)

@@ -18,6 +18,7 @@ class BookDataModel: NSObject {
         self.setValuesForKeys(dic)
     }
     
+    // 字典转BookDataModel，BookDataModel中没有的key重写不抛出异常
     override func setValue(_ value: Any?, forUndefinedKey key: String) {
         
     }

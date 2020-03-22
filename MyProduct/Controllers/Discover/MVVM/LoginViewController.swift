@@ -31,19 +31,19 @@ class LoginViewController: BaseViewController {
 
     func bindModel() {
         
-        // 帐号控件内容同步到DataModel的帐号属性
+        // 帐号控件内容同步到DataModel的帐号属性。同步信号，数据更新
         let accountProperty = DynamicProperty<String>(object: loginViewModel.loginDataModel,
                                                keyPath: #keyPath(LoginDataModel.account))
         accountProperty <~ accountTextField.reactive.continuousTextValues
 
-        // 密码控件内容同步到DataModel的密码属性
+        // 密码控件内容同步到DataModel的密码属性。同步信号，数据更新
         let pwdProperty = DynamicProperty<String>(object: loginViewModel.loginDataModel,
                                                       keyPath: #keyPath(LoginDataModel.pwd))
         pwdProperty <~ pwdTextField.reactive.continuousTextValues
 
-        // 信号生成器的值同步到登录按钮的启用状态上
+        // 信号生成器的值同步到登录按钮的启用状态上。同步信号，视图更新
 //        loginBtn.reactive.isEnabled <~ loginViewModel.enableLoginProducer
-        // enable按钮背影为蓝色，unable按钮背影为灰色
+        // enable按钮背影为蓝色，unable按钮背影为灰色。监听信号，视图更新
         loginViewModel.enableLoginProducer.startWithResult { [unowned self] (result) in
             switch result {
             case let .success(value):
@@ -61,6 +61,7 @@ class LoginViewController: BaseViewController {
     
     @IBAction func login(_ sender: Any) {
         
+        // 监听信号，处理交互
         loginViewModel.loginAction.apply(()).start { [unowned self] (event) in
             switch event {
             case let .value(value):
